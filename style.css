@@ -1,0 +1,167 @@
+.peach-box{
+    background-color: #F7E6D9;
+    width: 100%;
+    height: 90vh;
+}
+.peach-box .rect1{
+    background-color: #E7A184;
+    opacity: .7;
+    width: 400px;
+    height: 40px;
+    padding-top: 50px;
+    margin-left: 250px;
+    margin-top: 50px;
+    position: absolute;
+}
+
+.peach-box .rect2{
+    background-color: #E7A184;
+    opacity: .7;
+    width: 40px;
+    height: 40px;
+    /* padding-top: 80px; */
+    margin-left: 750px;
+    margin-top: 80px;
+    position: absolute;
+}
+
+.peach-box .rect3{
+    background-color: #E7A184;
+    opacity: .7;
+    width: 40px;
+    height: 40px;
+    /* padding-top: 80px; */
+    margin-left: 250px;
+    margin-top: 20%;
+    position: absolute;
+}
+.peach-box h1{
+    width: 40px;
+    height: 40px;
+    font-size: 140px;
+    font-family:Didot, serif;
+    /* padding-top: 80px; */
+    margin-left: 150px;
+    margin-top: 6%;
+    position: absolute;
+}
+
+.peach-box .rect4{
+    background-color: #E7A184;
+    opacity: .7;
+    width: 400px;
+    height: 40px;
+    padding-top: 50px;
+    margin-left: 400px;
+    margin-top: 20%;
+    position: absolute;
+}
+.peach-box h6{
+    position: absolute;
+    font-size: 70px;
+    margin-top: 25%;
+    margin-left: 30%;
+}
+
+.peach-box p{
+    position: absolute;
+    font-size: 30px;
+    margin-top: 33%;
+    margin-left: 33%;
+}
+.peach-box .insta a img{
+    position: absolute;
+    width: 5%;
+    height: 10%;
+    margin-top: 38%;
+    margin-left: 48%;
+}
+.peach-box .facebook a img{
+   position: absolute;
+    width: 5%;
+    height: 10%;
+    margin-top: 38%;
+    margin-left: 52%;
+}
+.peach-box .women img {
+    padding-top: 20px;
+    padding-right: 40px;
+    width: 28%;
+    height: 500px;
+    float: right;
+    margin-right: 20px; /* optional spacing from edge */
+    border-radius: 10px;
+}
+/* footer{
+    background-color: #E7A184;
+    width: 100%;
+    height: 50vh;
+}
+
+footer .mail p{
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 28px;
+} */
+
+.footer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #e6a384;
+}
+
+.contact {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.contact .email-icon {
+  font-size: 26px;
+  margin: 0 8px;
+  vertical-align: middle;
+}
+
+.contact .email {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #f7e1d0;
+}
+
+.footer-links .divider {
+  width: 1px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.copyright {
+  font-size: 18px;
+  color: white;
+}
+
+.logo {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  margin: 0 5px;
+}

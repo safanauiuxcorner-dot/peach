@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Peach Beauty</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+   
+
+   @font-face {
+  font-family: 'Didot';
+  src: url('didot/Didot-Bold.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Didot';
+  src: url('didot/Didot-Italic.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Didot';
+  src: url('didot/Didot-Title.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Didot';
+  src: url('fonts/Didot.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+    *{
+      font-family: 'Didot', serif;
+    }
+    body {
+      /* font-family: 'Didot', serif; */
+      background-color: #FFFFFF;
+      color: #443f3a;
+    }
+    .btn-primary {
+      background-color: #E7A184;
+      color: #FFFFFF;
+      padding: 0.5rem 1.75rem;
+      font-weight: 600;
+      border-radius: 0.375rem;
+      transition: background-color 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+    .btn-primary1 {
+      background-color: #000000;
+      color: #FFFFFF;
+      padding: 0.5rem 1.75rem;
+      font-weight: 600;
+      border-radius: 0.375rem;
+      transition: background-color 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+    .btn-primary:hover {
+      background-color: #E7A184;
+    }
+    .btn-secondary {
+      background-color: transparent;
+      border: 1px solid #E7A184;
+      color: #E7A184;
+      border-radius: 9999px;
+      padding: 0.25rem 1.5rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease,color 0.3s ease;
+    }
+    .btn-secondary:hover {
+      background-color: #E7A184;
+      color: white;
+    }
+    input[type="text"] {
+      border: none;
+      outline: none;
+      /* background: #; */
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      font-family: 'Arial', sans-serif;
+      font-size: 0.9rem;
+      color: #443f3a;
+      
+    }
+    input[type="text"]::placeholder {
+      color: #000000;
+      font-style: italic;
+    }
+
+    /* Scroll hide for brand section horizontal scroll */
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* Custom font for Aparajita style - using serif just to emphasize elegance */
+    .highlight-text {
+      font-family: "Didot", serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body class="select-none">
+
+  <!-- Header Navigation -->
+  <header class="flex items-center justify-between px-8 py-5 bg-[#f9ebe3] sticky top-0 z-50 border-b border-[#E7A184]">
+    <div class="text-4xl font-thin tracking-widest" style="font-family:Didot, serif;">PEACH</div>
+    <nav class="flex items-center gap-40 text-2xl font-light tracking-wide">
+      <a href="#" class="hover:text-[#E7A184] transition">Home</a>
+      <a href="#" class="hover:text-[#000000] transition">About</a>
+      <a href="#" class="hover:text-[#000000] transition">Categories</a>
+    </nav>
+    <div class="flex items-center gap-6">
+      <input type="text" placeholder="Search here" aria-label="Search here"  name="search" class="w-48" />
+       <!-- <input type="text" placeholder="Search here" aria-label="Search here" class="w-"/> -->
+
+      <button aria-label="Shopping cart">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-neutral-800" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 7M7 13l-2 6m12-6l2 6m-6-6v6"/></svg>
+      </button>
+      <button aria-label="User account">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-neutral-800" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A8 8 0 1116.424 6.5 5.5 5.5 0 0113 19.5v-1.5a2 2 0 10-4 0v1.5a5.507 5.507 0 01-3.879-2.197z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <!-- <section class="flex flex-wrap-reverse md:flex-nowrap justify-center items-center p-8 md:px-24 gap-8 bg-[#f9ebe3] relative overflow-hidden"> -->
+    <section class="flex flex-wrap-reverse md:flex-nowrap justify-start items-center p-8 md:px-5 gap-8 bg-[#f9ebe3] relative overflow-hidden">
+
+
+    
+    <div class="w-64 sm:w-80 md:w-96 relative rounded-xl overflow-hidden shadow-lg ml-2">
+      <img src="Close-up of Face with Skincare (1) 1.png" alt="Beautiful woman with cream applied on cheek, natural makeup glowing skin, soft light warm tones" class="w-full h-auto object-cover" loading="lazy" />
+    </div>
+    <div class="max-w-lg ml-28">
+      <h1 class="text-4xl md:text-5xl font-thin tracking-wide leading-snug mb-6" style="font-family:Didot, serif;">
+        Discover the best<br />beauty products
+      </h1>
+      <button class="btn-primary1" aria-label="Explore now">
+        Explore now <i class="bi bi-chevron-double-right"></i>
+      </button>
+    </div>
+    <!-- Artistic circles background elements -->
+    <div aria-hidden="true" class="hidden md:block absolute top-16 right-20 space-y-6">
+      <div class="w-14 h-14 rounded-full bg-[#E7A184] opacity-40"></div>
+      <div class="w-20 h-20 rounded-full bg-[#E7A184] opacity-25"></div>
+      <div class="w-36 h-36 rounded-full bg-[#E7A184] opacity-15"></div>
+    </div>
+  </section>
+
+  <!-- Followers and Brands -->
+  <!-- <section class="flex flex-col md:flex-row items-center justify-between gap-8 md:px-24 px-8 py-6 border-t border-[#e8ad92] border-b">
+    <div class="flex flex-col md:flex-row items-center gap-4 md:gap-12">
+      <div>
+        <span class="text-3xl font-thin tracking-tight" style="font-family:Didot, serif;">100k</span>
+        <p class="text-xs font-light">happy followers on social media</p>
+      </div>
+      <button class="btn-primary">Login</button>
+    </div>
+    </section>
+    <section class="flex flex-col md:flex-row items-center justify-between gap-8 md:px-24 px-8 py-6 border-t border-[#e8ad92] border-b"></section>
+    <div class="flex flex-nowrap overflow-x-auto gap-6 scrollbar-hide" aria-label="Brands">
+      <div class="w-20 h-20 flex items-center justify-center rounded-full border border-gray-300 bg-white flex-shrink-0" aria-label="Brand Biota">
+        <img src="bella vita.png" alt="Brand logo Biota in black font on white circle background" onerror="this.style.display='none'" class="rounded-full"/>
+      </div>
+      <div class="w-20 h-20 flex items-center justify-center rounded-full border border-gray-300 bg-white flex-shrink-0" aria-label="Brand Biota">
+        <img src="cetaphil.webp" alt="Brand logo Biota in black font on white circle background" onerror="this.style.display='none'" class="rounded-full"/>
+      </div>
+      <div class="w-20 h-20 flex items-center justify-center rounded-full border border-gray-300 bg-white flex-shrink-0" aria-label="Brand Biota">
+        <img src="insight.webp" alt="Brand logo Biota in black font on white circle background" onerror="this.style.display='none'" class="rounded-full"/>
+      </div>
+      <div class="w-20 h-20 flex items-center justify-center rounded-full border border-gray-300 bg-white flex-shrink-0" aria-label="Brand Biota">
+        <img src="mars cosmetics.avif" alt="Brand logo Biota in black font on white circle background" onerror="this.style.display='none'" class="rounded-full"/>
+      </div>
+      <div class="w-20 h-20 flex items-center justify-center rounded-full border border-gray-300 bg-white flex-shrink-0" aria-label="Brand Biota">
+        <img src="maybelline new york.jpg" alt="Brand logo Biota in black font on white circle background" onerror="this.style.display='none'" />
+      </div>
+     
+    </div>
+  </section> -->
+  <section class="flex flex-col md:flex-row items-center justify-center gap-72 md:px-24 px-8 py-6 border-t border-[#e8ad92] border-b">
+  <!-- Left: Stats -->
+  <div class="flex flex-col text-center md:text-left">
+    <span class="text-6xl font-thin tracking-tight -ml-20" style="font-family:Didot, serif;">100k</span>
+    <p class="text-lg font-light -ml-20">Downloads</p>
+  </div>
+
+  <!-- Right: Login -->
+  <div class="flex flex-col md:flex-row items-center gap-8">
+    <p class="text-4xl font-light -ml-20">Login & explore wide variety of products</p>
+    <button class="bg-[#e8ad92] text-white px-6 py-2 rounded-lg hover:bg-[#d9967c] transition ml-28 w-40 h-18">
+      Login
+    </button>
+  </div>
+</section>
+
+<!-- Brands Section -->
+<section class="px-10 md:px-36 py-6 bg-[#f9ece6]">
+  <div class="flex flex-nowrap md:flex-row items-center justify-center overflow-x-auto gap-20 scrollbar-hide" aria-label="Brands">
+    <div class="w-20 h-20 flex items-center justify-center rounded-full border border-gray-300 bg-white flex-shrink-0">
+      <img src="bella vita.png" alt="Bella Vita Logo" class="w-16 h-16 object-contain rounded-full" />
+    </div>
+    <div class="w-20 h-20 flex items-center justify-center rounded-full border border-gray-300 bg-white flex-shrink-0">
+      <img src="mars cosmetics.avif" alt="Mars Cosmetics Logo" class="w-16 h-16 object-contain rounded-full" />
+    </div>
+    <div class="w-20 h-20 flex items-center justify-center rounded-full border border-gray-300 bg-white flex-shrink-0">
+      <img src="maybelline new york.jpg" alt="Maybelline Logo" class="w-16 h-16 object-contain rounded-full" />
+    </div>
+    <div class="w-20 h-20 flex items-center justify-center rounded-full border border-gray-300 bg-white flex-shrink-0">
+      <img src="cetaphil.webp" alt="Cetaphil Logo" class="w-16 h-16 object-contain rounded-full" />
+    </div>
+    <div class="w-20 h-20 flex items-center justify-center rounded-full border border-gray-300 bg-white flex-shrink-0">
+      <img src="insight.webp" alt="Insight Logo" class="w-16 h-16 object-contain rounded-full" />
+    </div>
+    <div class="w-20 h-20 flex items-center justify-center rounded-full border border-gray-300 bg-white flex-shrink-0">
+      <img src="sugar.png" alt="Insight Logo" class="w-16 h-30  object-contain rounded-full" />
+    </div>
+    <div class="w-20 h-20 flex items-center justify-center rounded-full border border-gray-300 bg-white flex-shrink-0">
+      <img src="99-design-8.png" alt="Insight Logo" class="w-16 h-16 object-contain rounded-full" />
+    </div>
+  </div>
+</section>
+
+
+  <!-- Skincare Combo Banner -->
+  <!-- <section class="my-10 mx-8 md:mx-24 bg-[#f9ece6] rounded-xl flex flex-col md:flex-row items-center md:items-start justify-between gap-8 p-8 md:p-12 shadow-md relative overflow-hidden">
+    <div class="flex gap-6 md:gap-10">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/eb8ddd7f-70e7-4175-bc60-b3e7df899d73.png" alt="Black minimalist skincare pump bottle labelled 'FRESH DOT'" class=" w-48 shadow-lg" />
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/29c6db8d-fe97-49b0-b6c1-0762654f78f8.png" alt="Smaller black minimalist skincare dropper bottle labelled 'FRESH DOT'" class="rounded-lg shadow-lg" />
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c7cdda27-c892-4ba7-8281-758041e66bca.png" alt="Black minimalist skincare jar labelled 'FRESH DOT' with lid" class="rounded-lg shadow-lg self-center md:self-start" />
+    </div>
+    <div class="max-w-md text-center md:text-left">
+      <h2 class="text-3xl font-thin mb-3" style="font-family:Didot, serif;">
+        Glow from within with our skincare combo
+      </h2>
+      <p class="mb-6 text-gray-700 font-light">
+        Exfoliate, soothe, and nourish your skin.
+      </p>
+      <button class="btn-primary">Shop now</button>
+    </div>
+  </section> -->
+
+  <section class="my-10 mx-8 md:mx-24 bg-[#f5e2b8] rounded-lg flex flex-col md:flex-row items-center justify-between gap-8 p-8 md:p-12 border border-gray-300 relative overflow-hidden " style="border: 2px solid black; outline-offset: -30px;">
+    
+  <!-- Left: Product Images -->
+  <div class="flex items-end -gap-1"> 
+    <img src="bootle1.png" 
+         alt="Black minimalist skincare pump bottle labelled 'FRESH DOT'" 
+         class="w-40 md:w-48" />
+    <img src="bottle 2.png" 
+         alt="Smaller black minimalist skincare dropper bottle labelled 'FRESH DOT'" 
+         class="w-40 md:w-48 mb-3" />
+    <img src="bottle 3.png" 
+         alt="Black minimalist skincare jar labelled 'FRESH DOT' with lid" 
+         class="w-40 md:w-48 self-center md:self-end mb-3" />
+  </div>
+
+  <!-- Right: Text + Button -->
+  <div class="max-w-md text-center md:text-left -ml-24">
+    <h2 class="text-4xl font-thin  text-center md:text-left mb-3 " style="font-family:Didot, serif;">
+      Glow from within with our skincare combo
+    </h2>
+    <p class="mb-6 text-gray-800 font-light">
+      Exfoliating ,sunscreen ,moisturizer
+    </p>
+    <button class="bg-[#e8ad92] text-white px-8 py-3 rounded-full hover:bg-[#d9967c] transition">
+      Shop now
+    </button>
+  </div>
+
+  <!-- Decorative stars -->
+  <span class="absolute top-6 left-6 text-black text-xl">✦</span>
+  <span class="absolute top-1/3 left-12 text-black text-lg">✦</span>
+  <span class="absolute top-1/4 right-1/3 text-black text-xl">✦</span>
+</section>
+
+
+
+  <!-- Beauty Products Sale Banner -->
+  <section class="my-10 mx-8 md:mx-24 rounded-xl bg-[#f3e2d8]  shadow-lg relative overflow-hidden">
+    <img src="Group 310.png" alt="Set of color pastel beauty products standing on podium blocks arranged artistically with pastel colored blobs on background" class=" rounded-lg shadow-lg" />
+    <!-- <div class="max-w-lg text-center md:text-left">
+      <h2 class="text-2xl md:text-3xl font-thin mb-3" style="font-family:Didot, serif;">Glow beauty products<br />upto 50% off</h2>
+      <p class="mb-6 text-gray-700 font-light">Turn everyday skin into a glowing collection</p>
+      <button class="btn-primary">Shop now</button>
+    </div> -->
+  </section>
+
+  <!-- Top Selling Section -->
+<section class="px-8 md:px-24 mb-6">
+  <h3 class="text-lg font-light mb-6" style="font-family:Didot, serif;">Top selling</h3>
+  <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-6 gap-6">
+    
+    <!-- BORND STHOH -->
+    <div>
+      <div class="relative">
+        <img src="Elegant Amber Cosmetic Duo on Wooden Display (1).png" alt="Brown skin care bottles on block pedestal in warm tones" class="rounded-lg shadow-md" />
+        <div class="absolute top-0 left-0 bg-[#e8ad92] text-white text-xs font-semibold uppercase px-2 py-0.5 rounded-br-md">BORND STHOH</div>
+      </div>
+    </div>
+
+    <!-- BREWER -->
+    <div>
+      <div class="relative rounded-lg overflow-hidden shadow-md">
+        <img src="Brewier Dropper Bottle.png" alt="Dark glass dropper bottle containing skincare serum on white surface" class="rounded-lg"/>
+        <div class="absolute top-0 left-0 bg-[#e8ad92] text-white text-xs font-semibold uppercase px-2 py-0.5 rounded-br-md">BREWER</div>
+      </div>
+    </div>
+
+    <!-- Gryfin -->
+    <div>
+      <div class="relative rounded-lg overflow-hidden shadow-md">
+        <img src="Minimalist Product Design on Concrete and Yellow.png" alt="Yellow and white cosmetic boxes stacked, minimalist product design" class="rounded-lg"/>
+        <div class="absolute top-0 left-0 bg-[#e8ad92] text-white text-xs font-semibold uppercase px-2 py-0.5 rounded-br-md">Gryfin</div>
+      </div>
+    </div>
+
+    <!-- FLUMMAM -->
+    <div>
+      <div class="relative rounded-lg overflow-hidden shadow-md">
+        <img src="Group 197.png" alt="Flat lay of small bottle and cosmetics on natural textured table with green leaves" class="rounded-lg"/>
+        <div class="absolute top-0 left-0 bg-[#e8ad92] text-white text-xs font-semibold uppercase px-2 py-0.5 rounded-br-md">FLUMMAM</div>
+      </div>
+    </div>
+
+    <!-- nora -->
+    <div>
+      <div class="relative rounded-lg overflow-hidden shadow-md">
+        <img src="Group 197 (1).png" alt="Lipsticks standing upright on pastel surface, warm lighting" class="rounded-lg"/>
+        <div class="absolute top-0 left-0 bg-[#e8ad92] text-white text-xs font-semibold uppercase px-2 py-0.5 rounded-br-md">nora</div>
+      </div>
+    </div>
+
+    <!-- COCRE -->
+    <div>
+      <div class="relative rounded-lg overflow-hidden shadow-md">
+        <img src="Group 199.png" alt="White and black cosmetic bottles positioned minimal style on white surface" class="rounded-lg" />
+        <div class="absolute top-0 left-0 bg-[#e8ad92] text-white text-xs font-semibold uppercase px-2 py-0.5 rounded-br-md">COCRE</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Newest Products -->
+  <section class="px-8 md:px-24 my-10">
+    <h4 class="font-thin text-xl mb-8" style="font-family:Didot, serif;">Newest Products</h4>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+      <article class="bg-white rounded-xl p-6 shadow-md flex flex-col justify-between relative">
+        <img src="Group 311.png" alt="L'Oreal professional cream bottle with black label on white background" class="w-full mx-auto rounded-lg mb-6 shadow-sm" />
+        <h5 class="text-base mb-1 font-semibold">Loreal professional cream absolutely repair 100ml</h5>
+        <p class="text-amber-900 font-medium mb-3">₹ 400</p>
+        <button class="btn-secondary w-full text-center" aria-label="Add Loreal professional cream to cart" style="background-color: #E7A184; color: #FFFFFF ;">ADD TO CART</button>
+        <button aria-label="Add to wishlist" class="absolute top-4 right-4 text-gray-300 hover:text-[#e8ad92]" title="Add to wishlist">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-none stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.72-7.72 1.06-1.06a5.5 5.5 0 000-7.84z"/></svg>
+        </button>
+      </article>
+      <article class="bg-white rounded-xl p-6 shadow-md flex flex-col justify-between relative">
+        <img src="Group 312.png" alt="Glass bottle with dropper containing vitamin C facial serum" class="w-full mx-auto rounded-lg mb-6 shadow-sm" />
+        <h5 class="text-base mb-1 font-semibold">Lakme 9 t0 5 vit c facial serum 20ml</h5>
+        <p class="text-amber-900 font-medium mb-3">₹ 200</p>
+        <button class="btn-secondary w-full text-center" aria-label="Add Jakme vitamin C serum to cart" style="background-color: #E7A184; color: #FFFFFF ;">ADD TO CART</button>
+        <button aria-label="Add to wishlist" class="absolute top-4 right-4 text-gray-300 hover:text-[#e8ad92]" title="Add to wishlist">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-none stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.72-7.72 1.06-1.06a5.5 5.5 0 000-7.84z"/></svg>
+        </button>
+      </article>
+      <article class="bg-white rounded-xl p-6 shadow-md flex flex-col justify-between relative">
+        <img src="Group 313.png" alt="Swiss beauty ultra black long wear liquid eyeliner in black stylized" class="w-full mx-auto rounded-lg mb-6 shadow-sm" />
+        <h5 class="text-base mb-1 font-semibold">Swiss beauty ultra black longwear non transfer 5ml</h5>
+        <p class="text-amber-900 font-medium mb-3">₹ 350</p>
+        <button class="btn-secondary w-full text-center" aria-label="Add Swiss beauty ultra black eyeliner to cart" style="background-color: #E7A184; color: #FFFFFF ;">ADD TO CART</button>
+        <button aria-label="Add to wishlist" class="absolute top-4 right-4 text-gray-300 hover:text-[#e8ad92]" title="Add to wishlist">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-none stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.72-7.72 1.06-1.06a5.5 5.5 0 000-7.84z"/></svg>
+        </button>
+      </article>
+    </div>
+    <div class="text-center mt-8">
+      <button class="btn-secondary">See more</button>
+    </div>
+  </section>
+
+  <!-- Feedback Section -->
+  <!-- <section class="bg-[#f2e5dd] mx-8 md:mx-24 rounded-xl my-10 p-8 flex flex-col md:flex-row items-center justify-between gap-8 shadow-inner">
+    <!-- <div> -->
+      <!-- <h2 class="text-4xl font-thin tracking-tight mb-2" style="font-family:Didot, serif;">160k+</h2>
+      <p class="font-light text-gray-600 mb-3">Customers worldwide</p>
+      <div aria-label="Customer rating" class="flex items-center space-x-1 text-amber-500">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      </div> -->
+      
+    <!-- </div> -->
+    <!-- <form class="flex gap-4 items-center flex-wrap justify-center md:justify-start" aria-label="Customer feedback form">
+      <input type="text" aria-label="Enter your feedback" placeholder="Your feedback" class="max-w-xs" />
+      <button type="submit" class="btn-primary">Send</button>
+    </form>
+  </section>  -->
+
+  <section style="background-image: url('./feedback.png'); background-size: cover; background-position: center;height: 400px;" 
+  class="mx-8 md:mx-24 rounded-xl my-10 p-8 flex flex-col md:flex-row items-center justify-between gap-8 shadow-inner">
+  <form class="flex gap-4 items-center flex-wrap justify-center md:justify-start" aria-label="Customer feedback form" style="padding-left: 28%; padding-top: 5%;">
+    <input type="text" aria-label="Enter your feedback" placeholder="Your feedback" class="max-w-xs" style="background-color: #e8c9ba;"/>
+    <button type="submit" class="btn-primary">Send</button>
+  </form>
+</section>
+
+
+  <!-- Footer Banner -->
+  <!-- <footer class="bg-[#f9ebe3] text-[#443f3a] select-text relative overflow-hidden"> -->
+    <!-- <div class="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-24 mb-14"> -->
+      <!-- <div class="text-6xl font-thin tracking-wide relative" style="font-family:Didot, serif;">
+        PEACH -->
+        <!-- Overlay blocks for style -->
+        <!-- <span aria-hidden="true" class="absolute top-1/4 left-12 w-24 h-6 bg-[#e8ad92] opacity-50 rounded"></span> -->
+        <!-- <span aria-hidden="true" class="absolute bottom-0 left-0 w-14 h-14 bg-[#e8ad92] opacity-40 rounded-lg"></span>
+      </div> -->
+      <!-- <div class="w-56 md:w-auto h-30 md:h-auto"> -->
+        <!-- <img src="Group 320.png" alt="Profile side view of a woman with glowing skin, natural makeup, peach colored background" class="rounded-lg shadow-lg" style="height: 80%;width: 100%;"/> -->
+      <!-- </div> -->
+    <!-- </div> -->
+
+    <!-- <p class="text-center mb-6 text-sm font-light">Let's stay connected !</p>
+    <p class="text-center mb-8 text-sm font-light">Follow us on social media for updates & offers.</p> -->
+    <!-- <div class="flex justify-center space-x-8 mb-12">
+      <a href="#" aria-label="Instagram link" class="text-[#ec6957] hover:text-[#e8ad92]" title="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm4.25 5a4.5 4.5 0 100 9 4.5 4.5 0 000-9zm5.75-.25a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z"/></svg>
+      </a>
+      <a href="#" aria-label="Facebook link" class="text-[#4267b2] hover:text-[#e8ad92]" title="Facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.9 3.58 8.96 8.26 9.81v-6.93h-2.5v-2.88h2.5v-2.2c0-2.48 1.47-3.85 3.74-3.85 1.09 0 2.23.19 2.23.19v2.45h-1.25c-1.23 0-1.61.76-1.61 1.54v1.87h2.74l-.44 2.88h-2.3v6.93c4.68-.85 8.25-4.9 8.25-9.81z"/></svg>
+      </a>
+    </div> -->
+
+    <!-- Four Features -->
+    <!-- <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center mb-12"> -->
+      <!-- <div>
+        <div class="mx-auto mb-2 w-12 h-12 rounded-full bg-[#e8ad92] inline-flex items-center justify-center text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 stroke-white" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3v18h18"/></svg>
+        </div>
+        <p class="text-sm font-light">Free shipping on orders over ₹299</p>
+      </div>
+      <div>
+        <div class="mx-auto mb-2 w-12 h-12 rounded-full bg-[#e8ad92] inline-flex items-center justify-center text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 stroke-white" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <p class="text-sm font-light">Easy 5 days return policy</p>
+      </div>
+      <div>
+        <div class="mx-auto mb-2 w-12 h-12 rounded-full bg-[#e8ad92] inline-flex items-center justify-center text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 stroke-white" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 11c.88 0 1.714.372 2.293 1.07m.707-4.07a6 6 0 11-12 0 6 6 0 0112 0z"/></svg>
+        </div>
+        <p class="text-sm font-light">100% authentic beauty products</p>
+      </div>
+      <div>
+        <div class="mx-auto mb-2 w-12 h-12 rounded-full bg-[#e8ad92] inline-flex items-center justify-center text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 stroke-white" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 17a4 4 0 014-4h10a4 4 0 014 4M12 7v-5M6.5 3.7h11"/></svg>
+        </div>
+        <p class="text-sm font-light">150+ premium brands</p>
+      </div>
+    </div> -->
+
+    <!-- Contact and policy links -->
+     <!-- <div class="bg-[#E7A184] text-white p-6" style="border-radius: 10px;"> -->
+        <!-- <div class="text-center text-xs font-light mb-3 ">
+          Contact us
+          <a href="mailto:peachbeauty@gmail.com" class="text-[#FFFFFF]" aria-label="Email peachbeauty@gmail.com">🍑 peachbeauty@gmail.com</a>
+        </div>
+        <nav class="flex justify-center gap-4 text-[#b48a77] text-xs font-light select-text mb-4">
+          <a href="#" class="hover:text-[#FFFFFF]" style="color: white;">Terms & condition</a>
+          <a href="#" class="hover:text-[#FFFFFF]" style="color: white;">Cancellation policy</a>
+          <a href="#" class="hover:text-[#FFFFFF]" style="color: white;">Shipping policy</a>
+          <a href="#" class="hover:text-[#FFFFFF]" style="color: white;">Privacy policy</a>
+        </nav>
+
+        <p class="text-center text-xs font-light">© 2023 PEACH BEAUTY. All Rights Reserved.</p> 
+    </div> -->
+  <!-- </footer> -->
+
+
+  <div class="peach-box">
+    <div class="rect1">
+
+    </div>
+    <div class="rect2">
+      
+    </div>
+    <div class="rect3">
+      
+    </div>
+    <div class="rect4">
+      
+    </div>
+    <h1>PEACH</h1>
+    <h6>Let's stay connected !</h6>
+    <p>Follow us on social media  for more updates </p>
+    <!-- <span ><i class="bi bi-instagram"></i></span> -->
+     <div class="insta">
+        <a href="">
+          <img src="instagram logo.png.png" alt="">
+        </a>
+        
+     </div>
+     <div class="facebook">
+        <a href="">
+          <img src="facebook logo.png.png" alt="">
+        </a>
+
+     </div>
+     <div class="women">
+          <img src="Close-up of a Human Face (1).png" alt="">
+     </div>
+  
+  </div>
+
+  <div class="market" style="background-color: rgb(255, 255, 255); ;">
+    <img src="./Group 317.png" alt="">
+  </div>
+  <!-- <footer>
+    <div class="mail">
+      <p>Contact us  <i class="bi bi-envelope"></i>  peachbeauty@gmail.com</p>
+    </div>
+  </footer> -->
+  <footer class="footer">
+    
+<div class="contact">
+  <span style="color: white;">Contact us</span>
+  <i class="bi bi-envelope email-icon" style="color: white;"></i>
+  <a href="mailto:peachbeauty@gmail.com" class="email">peachbeauty@gmail.com</a>
+</div>
+
+    <div class="footer-links">
+      <a href="#">Terms & condition</a>
+      <span class="divider"></span>
+      <a href="#">Cancellation policy</a>
+      <span class="divider"></span>
+      <a href="#">Shipping policy</a>
+      <span class="divider"></span>
+      <a href="#">Privacy policy</a>
+    </div>
+
+    <div class="copyright">
+      <p>2025 <span class="logo">@</span> PEACH E-RETAIL LIMITED All Rights Reserved</p>
+    </div>
+  </footer>
+</body>
+</html>
+
